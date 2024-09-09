@@ -3,8 +3,11 @@ export default {
   components: true,
   target: 'static',
   router: {
-    base: '/servermanager/',
+    base: '/ServerManager/',
   },
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
+  generate: {
+    fallback: true,
+  },
 }
