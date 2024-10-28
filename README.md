@@ -1,78 +1,71 @@
-  Deployed on Vercel:
+# Client Server List Editor
+
+Приложение для редактирования списка серверов клиентов, разработанное с использованием Vue/Nuxt и TypeScript. Включает базовую верстку, вывод списка серверов, выбор модели для редактирования и форму для изменения параметров сервера.
+
+Проект размещен на Vercel:
 https://server-manager-5llqnx6et-jadosons-projects.vercel.app/
 
-# Nuxt 3 Minimal Starter
+## Технологии
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+- **Vue/Nuxt** для интерфейса и маршрутизации
+- **TypeScript** для типизации
+- **SCSS** для стилизации
+- **Tailwind CSS** для улучшенной стилизации (дополнительно)
+- **ES6+** для современного JavaScript
 
-## Setup
+## Функционал
 
-Make sure to install the dependencies:
+Приложение выполняет следующие задачи:
+1. Отображает список серверов клиентов.
+2. Позволяет выбирать сервер для редактирования.
+3. Предоставляет форму для изменения имени сервера (`server_name`) и типа сервера (`server_type`), где:
+   - `server_name` — поле ввода (`input`)
+   - `server_type` — выпадающий список (`select`)
+
+## Структура проекта
+
+```plaintext
+├── components
+│   ├── ServerList.vue        # Компонент для отображения списка серверов
+│   ├── ServerEditForm.vue    # Компонент для формы редактирования сервера
+├── pages
+│   └── index.vue             # Главная страница приложения с макетом SPA
+├── nuxt.config.ts            # Конфигурация Nuxt
+└── README.md                 # Документация проекта
+```
+
+## Установка и запуск
+Для локального запуска проекта:
+
+Клонируйте репозиторий:
 
 ```bash
-# npm
+git clone https://github.com/Jadoson/ServerManager.git
+```
+
+Перейдите в директорию проекта:
+
+``` bash
+cd ServerManager
+```
+
+Установите зависимости:
+
+``` bash
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+Запустите приложение в режиме разработки:
 
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
+``` bash
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+## Демонстрация
+В интерфейсе приложения есть две основные части:
+Список серверов слева, отображающий все модели серверов.
+Форма редактирования справа, позволяющая редактировать выбранную модель сервера.
+При изменении данных они сразу же обновляются в списке. Форма редактирования позволяет выбирать тип сервера (vds, dedicated, hosting) и изменять имя сервера.
 
-Build the application for production:
 
-```bash
-# npm
-npm run build
 
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
