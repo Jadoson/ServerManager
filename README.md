@@ -11,6 +11,7 @@ https://server-manager-5llqnx6et-jadosons-projects.vercel.app/
 - **TypeScript** для типизации
 - **SCSS** для стилизации
 - **ES6+** для современного JavaScript
+- **localStorage** для сохранения данных между сессиями
 
 ## Функционал
 
@@ -20,6 +21,7 @@ https://server-manager-5llqnx6et-jadosons-projects.vercel.app/
 3. Предоставляет форму для изменения имени сервера (`server_name`) и типа сервера (`server_type`), где:
    - `server_name` — поле ввода (`input`)
    - `server_type` — выпадающий список (`select`)
+4. localStorage: данные серверов сохраняются в `localStorage` браузера, что позволяет сохранять изменения между сессиями пользователя.
 
 ## Структура проекта
 
