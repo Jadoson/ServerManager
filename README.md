@@ -10,7 +10,6 @@ https://server-manager-5llqnx6et-jadosons-projects.vercel.app/
 - **Vue/Nuxt** для интерфейса и маршрутизации
 - **TypeScript** для типизации
 - **SCSS** для стилизации
-- **Tailwind CSS** для улучшенной стилизации (дополнительно)
 - **ES6+** для современного JavaScript
 
 ## Функционал
