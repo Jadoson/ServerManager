@@ -13,6 +13,7 @@ https://server-manager-5llqnx6et-jadosons-projects.vercel.app/
 - **ES6+** для современного JavaScript
 - **localStorage** для сохранения данных между сессиями
 
+
 ## Функционал
 
 Приложение выполняет следующие задачи:
